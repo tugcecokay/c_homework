@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+void main()
+{
+	int birler,onlar,yuzler,binler;// Çözümlenecek sayının basamaklarını tanımlar.
+	int sayi;// Çözümlenecek sayı değişkenini tanımlar.
+		
+		printf("Cozumlenecek 4 basamakli sayi giriniz: ");// Ekranda görüntüler.
+		scanf("%d",&sayi);// Girilen sayıyı sayi ya aktarır.
+		printf("\nGirilen sayi= %d",sayi);//
+		printf("\n\n");
+			binler=sayi/1000;//Girilen sayının binler basamağındaki rakamı değişkene aktarır.
+		printf("%d tane binlik sayi var\n",binler);// Bulunan binler basamağındaki rakamı ekranda görüntüler.
+			yuzler=sayi/100;// sayi'nın 100e bölümünü bulur.
+			yuzler=yuzler%10;// Bulunan bölümün mod10'unu alarak yüzler basamağındaki rakamı değişkene aktarır.
+		printf("%d tane yuzluk sayi var\n",yuzler);// Bulunan yüzler basamağındaki rakamı ekranda görüntüler. 
+			onlar=sayi/10;//sayi'nın 10a bölümünü bulur.
+			onlar=onlar%10;//Bulunan bölümün mod10'unu alarak onlar basamağındaki rakamı değişkene aktarır.
+		printf("%d tane onluk sayi var\n",onlar);//Bulunan onlar basamağındaki rakamı ekranda görüntüler.
+			birler=sayi%10;//Girilen sayının mod10'unu alarak birler basamağındaki rakamı bulur.
+		printf("%d tane birlik sayi var\n",birler);// Birler basamağındaki rakamı ekranda görüntüler.
+	getch();// Görüntünün ekranda kalmasını sağlar.
+
+}
+
